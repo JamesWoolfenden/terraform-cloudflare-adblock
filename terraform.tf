@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     cloudflare = {
-      source = "hashicorp/cloudflare"
+      source  = "hashicorp/cloudflare"
       version = "3.33.1"
     }
   }
@@ -14,4 +14,3 @@ terraform {
     region         = "eu-west-2"
   }
 }
-

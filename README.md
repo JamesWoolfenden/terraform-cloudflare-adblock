@@ -16,6 +16,46 @@ Terraform module -
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 Adapted from <https://blog.marcolancini.it/2022/blog-serverless-ad-blocking-with-cloudflare-gateway/>.
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | 3.33.1 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 3.32.0 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [cloudflare_teams_account.woolfenden](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/resources/teams_account) | resource |
+| [cloudflare_teams_list.pihole_domain_lists](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/resources/teams_list) | resource |
+| [cloudflare_teams_rule.block_ads](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/resources/teams_rule) | resource |
+| [cloudflare_teams_rule.block_malware](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/resources/teams_rule) | resource |
+| [cloudflare_accounts.woolfenden](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/data-sources/accounts) | data source |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_team_name"></a> [team\_name](#input\_team\_name) | Your cloudflare team name | `string` | n/a | yes |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_account"></a> [account](#output\_account) | n/a |
+| <a name="output_accounts"></a> [accounts](#output\_accounts) | n/a |
+| <a name="output_malware_rule"></a> [malware\_rule](#output\_malware\_rule) | n/a |
+| <a name="output_team"></a> [team](#output\_team) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Policy
 
@@ -30,7 +70,7 @@ and  Using <https://github.com/marco-lancini/utils/tree/main/terraform/cloudflar
 The `action-update-list.yml` provides a sample
 GitHub Actions workflow that periodically (monthly) fetches the list upstream and commits it to the repo if it has changed.
 
-![](https://blog.marcolancini.it/images/posts/blog_serverless_adblocking_gh_workflow.png)
+![workflow](https://blog.marcolancini.it/images/posts/blog_serverless_adblocking_gh_workflow.png)
 
 ## Related Projects
 
@@ -83,4 +123,3 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-

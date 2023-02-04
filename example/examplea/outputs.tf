@@ -1,3 +1,3 @@
 output "adblock" {
-  value=module.adblock
+  value = module.adblock
 }

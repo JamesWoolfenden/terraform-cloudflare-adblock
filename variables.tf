@@ -1,4 +1,4 @@
 variable "team_name" {
-  type=string
+  type        = string
   description = "Your cloudflare team name"
 }

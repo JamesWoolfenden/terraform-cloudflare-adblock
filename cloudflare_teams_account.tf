@@ -41,4 +41,3 @@ resource "cloudflare_teams_account" "woolfenden" {
   activity_log_enabled = true
   tls_decrypt_enabled  = false
 }
-

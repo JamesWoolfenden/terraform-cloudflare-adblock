@@ -7,7 +7,7 @@ on:
     - cron: '0 10 15 * *' # At 10:00 on day-of-month 15
 
 env:
-  FOLDER: '${GITHUB_WORKSPACE}/cloudflare/lists'
+  FOLDER: '${{GITHUB_WORKSPACE}}/cloudflare/lists'
 
 jobs:
   auto-update:

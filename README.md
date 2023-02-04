@@ -8,13 +8,14 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 [![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-cloudflare-adblock/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-cloudflare-adblock&benchmark=INFRASTRUCTURE+SECURITY)
-Terraform module -
 
+Terraform module -
 
 ---
 
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 Adapted from <https://blog.marcolancini.it/2022/blog-serverless-ad-blocking-with-cloudflare-gateway/>.
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -26,7 +27,7 @@ Adapted from <https://blog.marcolancini.it/2022/blog-serverless-ad-blocking-with
 
 | Name | Version |
 |------|---------|
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 3.32.0 |
+| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 3.33.1 |
 
 ## Modules
 
@@ -57,6 +58,7 @@ No modules.
 | <a name="output_malware_rule"></a> [malware\_rule](#output\_malware\_rule) | n/a |
 | <a name="output_team"></a> [team](#output\_team) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Policy
 
 This is the policy required to build this project:

@@ -11,6 +11,14 @@
 
 Terraform module -
 
+This module helps you set up a Cloudflare team for use with the Warp client, enabling Malware protection and Adblocking.
+
+You need to register for an account first and then install the Cloudflare Warp client on the devices you want to protect.
+
+<https://developers.cloudflare.com/cloudflare-one/setup/>
+
+This module does everything else, sets up the block lists and has 2 GHA that keep the list updated and deploy it.
+
 ---
 
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).

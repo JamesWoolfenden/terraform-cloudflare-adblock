@@ -5,7 +5,7 @@ resource "cloudflare_teams_account" "woolfenden" {
     name             = var.team_name
     header_text      = "This website is blocked by Cloudfare DNS"
     footer_text      = "Blocked footer"
-    logo_path        = "https://example.com/logo.png"
+    logo_path        = var.logo_path
     background_color = "#e8e8e8"
   }
 

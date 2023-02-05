@@ -39,7 +39,7 @@ CLOUDFLARE_API_KEY
 
 CLOUDFLARE_EMAIL
 
-Im also using an AWS state file, if you use the same then youll also need to provide adequate AWS creds and env vars.
+I'm also using an AWS state file, if you use the same then you'll also need to provide adequate AWS creds and env vars.
 
 Adapted from <https://blog.marcolancini.it/2022/blog-serverless-ad-blocking-with-cloudflare-gateway/>.
 
@@ -74,6 +74,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_logo_path"></a> [logo\_path](#input\_logo\_path) | n/a | `string` | `"https://pbs.twimg.com/profile_images/1408927094315393028/WkL6f1Qf_400x400.jpg"` | no |
 | <a name="input_team_name"></a> [team\_name](#input\_team\_name) | Your cloudflare team name | `string` | n/a | yes |
 
 ## Outputs

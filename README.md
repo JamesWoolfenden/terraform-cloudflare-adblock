@@ -14,6 +14,23 @@ Terraform module -
 ---
 
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
+
+## Usage
+
+```terraform
+module "adblock" {
+  source        = "JamesWoolfenden/adblock/cloudflare"
+  version       = "0.0.1"
+  team_name     = "<yourteamnamefromcloudflare>"
+}
+```
+
+To run a copy of the Github action (Deploy and Bump), you need to add the env vars to your repository secrets:
+
+CLOUDFLARE_API_KEY
+
+CLOUDFLARE_EMAIL
+
 Adapted from <https://blog.marcolancini.it/2022/blog-serverless-ad-blocking-with-cloudflare-gateway/>.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
@@ -37,11 +54,11 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [cloudflare_teams_account.woolfenden](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/resources/teams_account) | resource |
-| [cloudflare_teams_list.pihole_domain_lists](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/resources/teams_list) | resource |
-| [cloudflare_teams_rule.block_ads](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/resources/teams_rule) | resource |
-| [cloudflare_teams_rule.block_malware](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/resources/teams_rule) | resource |
-| [cloudflare_accounts.woolfenden](https://registry.terraform.io/providers/hashicorp/cloudflare/3.33.1/docs/data-sources/accounts) | data source |
+| [cloudflare_teams_account.woolfenden](https://registry.terraform.io/providers/cloudflare/cloudflare/3.33.1/docs/resources/teams_account) | resource |
+| [cloudflare_teams_list.pihole_domain_lists](https://registry.terraform.io/providers/cloudflare/cloudflare/3.33.1/docs/resources/teams_list) | resource |
+| [cloudflare_teams_rule.block_ads](https://registry.terraform.io/providers/cloudflare/cloudflare/3.33.1/docs/resources/teams_rule) | resource |
+| [cloudflare_teams_rule.block_malware](https://registry.terraform.io/providers/cloudflare/cloudflare/3.33.1/docs/resources/teams_rule) | resource |
+| [cloudflare_accounts.woolfenden](https://registry.terraform.io/providers/cloudflare/cloudflare/3.33.1/docs/data-sources/accounts) | data source |
 
 ## Inputs
 
@@ -94,7 +111,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-clou
 
 ## Copyrights
 
-Copyright 2023 James Woolfenden
+Copyright � 2023 James Woolfenden
 
 ## License
 

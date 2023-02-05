@@ -35,10 +35,12 @@ jobs:
             ${{ runner.os }}-terraform-
       - name: Terraform Init
         id: init
-        run: terraform init example/examplea
+        run: terraform init
+        working-directory: example/examplea
       - name: Terraform Apply
         id: apply
-        run: terraform apply --auto-approve example/examplea
+        run: terraform apply --auto-approve
+        working-directory: example/examplea
   version:
     name: versioning
     runs-on: ubuntu-latest

@@ -44,6 +44,7 @@ jobs:
         run: terraform apply --auto-approve
         working-directory: example/examplea
   version:
+    permissions: write-all
     name: versioning
     runs-on: ubuntu-latest
     steps:

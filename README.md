@@ -1,6 +1,6 @@
 # terraform-cloudflare-adblock
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock/workflowsDeploy%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock/workflows/Deploy%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-cloudflare-adblock.svg)](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-cloudflare-adblock.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)

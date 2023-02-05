@@ -1,6 +1,6 @@
 # terraform-cloudflare-adblock
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock/workflowsDeploy%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock/workflows/Deploy%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-cloudflare-adblock.svg)](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-cloudflare-adblock.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-cloudflare-adblock/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
@@ -38,6 +38,8 @@ To run a copy of the Github action (Deploy and Bump), you need to add the env va
 CLOUDFLARE_API_KEY
 
 CLOUDFLARE_EMAIL
+
+Im also using an AWS state file, if you use the same then youll also need to provide adequate AWS creds and env vars.
 
 Adapted from <https://blog.marcolancini.it/2022/blog-serverless-ad-blocking-with-cloudflare-gateway/>.
 

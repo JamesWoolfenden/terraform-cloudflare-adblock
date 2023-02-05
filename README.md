@@ -31,6 +31,8 @@ CLOUDFLARE_API_KEY
 
 CLOUDFLARE_EMAIL
 
+Im also using an AWS state file, if you use the same then youll also need to provide adequate AWS creds and env vars.
+
 Adapted from <https://blog.marcolancini.it/2022/blog-serverless-ad-blocking-with-cloudflare-gateway/>.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

@@ -11,7 +11,7 @@ env:
   CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY}}
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID}}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-
+  tf_target_dir: example/examplea
 jobs:
   terraform:
     runs-on: ubuntu-latest
@@ -25,7 +25,7 @@ jobs:
           fetch-depth: '0'
       - name: Config Terraform plugin cache
         run: |
-          echo "plugin_cache_dir=$HOME/.terraform.d/plugin-cache" >~/.terraformrc
+          echo plugin_cache_dir="$HOME/.terraform.d/plugin-cache" >~/.terraformrc
           mkdir --parents ~/.terraform.d/plugin-cache
       - name: Cache Terraform
         uses: actions/cache@v3.2.4

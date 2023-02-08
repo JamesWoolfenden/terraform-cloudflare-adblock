@@ -9,6 +9,8 @@ on:
 env:
   FOLDER: '${{ github.workspace }}/cloudflare/lists'
 
+permissions: read-all
+
 jobs:
   auto-update:
     runs-on: ubuntu-latest

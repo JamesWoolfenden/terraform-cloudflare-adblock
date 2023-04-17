@@ -30,7 +30,7 @@ jobs:
       - name: 🔗 Fetch Domain List
         working-directory: ${{ env.FOLDER }}
         run: |
-          LIST_URL="https://adaway.org/hosts.txt"
+          LIST_URL="https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts"
           LIST_FNAME="pihole_domain_list.txt"
 
           echo "[*] Fetching list: ${LIST_URL} -> ${LIST_FNAME}"

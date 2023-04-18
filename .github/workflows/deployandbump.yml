@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: hashicorp/setup-terraform@v2.0.3
       - name: Checkout
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v3.5.2
         with:
           ref: master
           token: ${{ github.token }}
@@ -31,7 +31,7 @@ jobs:
           echo plugin_cache_dir="$HOME/.terraform.d/plugin-cache" >~/.terraformrc
           mkdir --parents ~/.terraform.d/plugin-cache
       - name: Cache Terraform
-        uses: actions/cache@v3.2.4
+        uses: actions/cache@v3.3.1
         with:
           path: |
             ~/.terraform.d/plugin-cache
@@ -51,7 +51,7 @@ jobs:
     name: versioning
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.3.0
+      - uses: actions/checkout@v3.5.2
         with:
           fetch-depth: '0'
       - name: Bump version and push tag

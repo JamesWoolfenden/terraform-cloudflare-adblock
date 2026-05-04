@@ -19,9 +19,9 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
     steps:
-      - uses: hashicorp/setup-terraform@v2.0.3
+      - uses: hashicorp/setup-terraform@5e8dbf3c6d9deaf4193ca7a8fb23f2ac83bb6c85 # v4.0.0
       - name: Checkout
-        uses: actions/checkout@v3.5.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           ref: master
           token: ${{ github.token }}
@@ -31,7 +31,7 @@ jobs:
           echo plugin_cache_dir="$HOME/.terraform.d/plugin-cache" >~/.terraformrc
           mkdir --parents ~/.terraform.d/plugin-cache
       - name: Cache Terraform
-        uses: actions/cache@v3.3.1
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
           path: |
             ~/.terraform.d/plugin-cache
@@ -51,11 +51,11 @@ jobs:
     name: versioning
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: '0'
       - name: Bump version and push tag
-        uses: anothrNick/github-tag-action@1.61.0
+        uses: anothrNick/github-tag-action@4ed44965e0db8dab2b466a16da04aec3cc312fd8 # 1.75.0
         env:
           GITHUB_TOKEN: ${{ github.token }}
           DEFAULT_BUMP: patch

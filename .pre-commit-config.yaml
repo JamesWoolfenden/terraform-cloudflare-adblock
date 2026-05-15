@@ -39,3 +39,12 @@ repos:
         language_version: python3.11
       - id: tf2docs
         language_version: python3.11
+  - repo: https://github.com/jameswoolfenden/pike
+    rev: v0.2.64
+    hooks:
+      - id: pike-docs-go
+        args: ["readme","-d", ".", "-i"]
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.6.23
+    hooks:
+      - id: actionlint
